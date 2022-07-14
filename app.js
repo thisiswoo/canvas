@@ -8,7 +8,7 @@ class App {
 
         this.wave = new Wave();
 
-        window.addEventListener('resize', this.resize.bind(this), fasle);
+        window.addEventListener('resize', this.resize.bind(this), false);
         this.resize();
 
         requestAnimationFrame(this.animate.bind(this));
@@ -36,4 +36,4 @@ class App {
 
 window.onload = () => {
     new App();
-}
+};
